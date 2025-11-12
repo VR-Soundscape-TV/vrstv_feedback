@@ -1,0 +1,31 @@
+name: ❓ 質問 / Q&A
+description: 開発に関する質問や相談はこちら
+title: "[Question] "
+labels:
+  - question
+
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ 質問内容
+      description: 質問内容をできるだけ明確に記述してください。
+      placeholder: 例）VRChatで●●Playerでの再生の仕方を教えてほしい
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: ✅ 試したこと
+      description: すでに試した方法があれば記述してください。
+      placeholder: |
+        ・公式ドキュメントを確認
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 📝 補足情報
+      description: 環境・コードの抜粋など、回答に必要そうな情報があれば記載してください。
